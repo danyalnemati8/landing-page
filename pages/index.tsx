@@ -12,19 +12,21 @@ const Home: NextPage = () => {
       <Navbar isCompact variant={"static"}>
         <Navbar.Brand>
           <Text b color="inherit">
-            LearnToCode
+            SBD
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
-          <Navbar.Link href="#">Learning Platform</Navbar.Link>
-          <Navbar.Link href="#">Community</Navbar.Link>
+          <Navbar.Link href="#">Products</Navbar.Link>
+          <Navbar.Link href="#">Collections</Navbar.Link>
+          <Navbar.Link href="#">Gift Cards</Navbar.Link>
+          <Navbar.Link href="#">Retailers</Navbar.Link>
           <Navbar.Link href="#">Contact Us</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
-          <Navbar.Link href="#">Login</Navbar.Link>
+          <Navbar.Link href="#">Account</Navbar.Link>
           <Navbar.Item>
             <Button auto flat href="#">
-              Sign Up
+              Shopping Cart
             </Button> 
           </Navbar.Item>
         </Navbar.Content>
