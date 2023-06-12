@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import * as sbd from '../pages/sbd.png'
 import { Container, Navbar, Text, Button, Grid, Col } from '@nextui-org/react';
 
 
@@ -11,9 +12,11 @@ const Home: NextPage = () => {
       {/* Navbar */}
       <Navbar isCompact variant={"static"}>
         <Navbar.Brand>
-          <Text b color="inherit">
+          <Text>
             SBD
           </Text>
+          <img src={sbd.toString()} width={30} height={30} />
+         
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
           <Navbar.Link href="#">Products</Navbar.Link>
@@ -32,28 +35,6 @@ const Home: NextPage = () => {
         </Navbar.Content>
       </Navbar>
       {/* Jumbotron */}
-      <Grid.Container justify="center" css={{"height": "500px", "backgroundImage": "url(https://littlevisuals.co/images/sunset.jpg)"}}>
-        <Grid xs={12} sm={6} alignItems="center">
-          <Col css={{"width": "100%"}}>
-            <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>The Education Platform</Text>
-            <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Of The Future</Text>
-            <Button size="md" shadow color="gradient" css={{"width": "100%", "marginTop": "10px"}}>Join For Free</Button>
-          </Col>
-        </Grid>
-      </Grid.Container>
-
-      {/* 3 Displaying Product Cards */}
-      <Grid.Container gap={2}>
-        <Grid xs={12} sm={4}>
-     
-        </Grid>
-        <Grid xs={12} sm={4}>
-    
-        </Grid>
-        <Grid xs={12} sm={4}>
-      
-        </Grid>
-      </Grid.Container>
     </Container>
   )
 }
